@@ -3,7 +3,6 @@ package com.se.gsa.Controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,8 +17,6 @@ public class UIController {
 
     @GetMapping("/")
     public String main(Model model) {
-        List<Patient> patients = patientService.listPatients();
-        model.addAttribute("patients", patients);
         return "main"; // view
     }
 
