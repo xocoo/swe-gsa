@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>GSA test for Software Engineering</title>
+    <link rel="stylesheet" th:href="@{bootstrap.min.css}" />
+    <link rel="stylesheet" th:href="@{style.css}" />
+
+</head>
+
+<body>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">HolyCross Medical Center</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="/patients" class="nav-link">Patients</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Elderly Patients</a></li>
+        </ul>
+    </header>
+
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+            <h1 class="display-5 fw-bold">Welcome to the HCMC Patients Management System (PMS)</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">
+                    At HolyCross Medical Center, we are known for providing the very best in top-quality health-care to
+                    our patients.
+
+                    On this system, you can see the list of our Patients, including the special list of our Elderly
+                    Patients.
+                    You can also register a new Patient.
+
+                    These options can also be accessed through clicking the appropriate menu item, located on the
+                    menu-bar above.
+
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into
+                    electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                    Ipsum.</p>
+            </div>
+            <div class="overflow-hidden" style="max-height: 30vh;">
+                <div class="container px-5">
+                    <img th:src="@{/zurag.jpeg}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
+                        width="700" height="500" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">Place sticky footer content here.</span>
+        </div>
+    </footer>
+</body>
+
+</html>
